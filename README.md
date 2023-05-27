@@ -1,9 +1,21 @@
 ## Project 4 Report - Heart Disease Analysis and Prediction.
 
 ## Overview.
-### The purpose of this analysis was to use my knowledge of machine learning to create a binary classifier that can predict the chance of a heart disease.
+### The purpose of this analysis was to use our knowledge of machine learning to create a binary classifier that can predict the chance of a heart disease.
 
-The dataset was obtained from Kaggle.
+You are very welcome to have a look at our presentation slide deck for deeper insight into our story on Heart Disease Analysis and Prediction.
+
+**Project4SlideDeck.ppt**
+
+## Contributing Members 
+
+Ufuoma Atakere & Sandra Botica
+
+Students @ UWA 6 month Data Analytics Bootcamp November 2022- June 2023
+
+## Acknowledgments
+
+**Data sourced from Kaggle.**
 https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv
 
  - Age : Age of the patient
@@ -21,17 +33,24 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
  - thall : thalassemia (0 = null, 1 = fixed defect, 2 = normal, 3 = reversable defect)
  - output: diagnosis of heart disease (angiographic disease status)(0: < 50% diameter narrowing. less chance of heart disease, 1: > 50% diameter narrowing. more chance of heart disease)
 
+## Technologies used
+ - Python notebook
+ - Matplotlib
+ - QuickDBD
+ - PostgreSQL
+ - pgAdmin4
+ - Tableau
 ## Data Preprocessing
 
 ### What variable(s) are the target(s) for your model?
-
+ - The "output" column, was the y target variable for the model. 
+ - There are 165 `1` More chance of heart disease > 50% diameter narrowing and 138 `0` Less chance of heart disease < 50% diameter narrowing. This indicated a fairly well-balanced column of data as the target variable.
 ### What variable(s) are the features for your model?
+ - All other columns are the X variable or features for the model.
 ### What variable(s) should be removed from the input data because they are neither targets nor features?
 
 # Data Model Implementation.
 ## Compiling, Training, and Evaluating the Model.
-
-### How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 ### Did I achieve the target model performance of 75% classification accuracy or 0.8 R-squared?
 
@@ -42,6 +61,4 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
 ## Results
 ## Summary.
 
-I would recommend 
-
-### Enjoy marking! Sandra
+We would recommend 
