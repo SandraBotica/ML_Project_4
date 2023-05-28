@@ -48,7 +48,7 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
 ### What variable(s) are the features for your model?
  - All other columns are the X variable or features for the model.
 ### What variable(s) should be removed from the input data because they are neither targets nor features?
-
+- Variables to be removed were determined from checking different correlations
 # Data Model Implementation.
 ## Compiling, Training, and Evaluating the Model.
 
