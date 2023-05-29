@@ -35,7 +35,6 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
  - `ca`         Number of major vessels (0-4) colored by flourosopy
  - `thall`      Thalassemia (0 = null, 1 = fixed defect, 2 = normal, 3 = reversable defect)
  - `output`     Diagnosis of heart disease (angiographic disease status)(0: < 50% diameter narrowing. less chance of heart disease, 1: > 50% diameter narrowing. more chance of heart disease)
-
 ## Technologies used
  - Python notebook
  - Matplotlib
@@ -54,22 +53,18 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
 ### What variable(s) are the features for your model?
  - All other columns are the X variable or features for the model.
 
-# Data Model Implementation.
-## Compiling, Training, and Evaluating the Model.
-### Did we achieve the target model performance of 75% classification accuracy or 0.8 R-squared?
-Initially the X variable or features included all columns and an accuracy of 79% was achieved.
-### Did we achieve the target model performance of 75% classification accuracy or 0.8 R-squared?
+## Data Model Implementation.
+### Compiling, Training, and Evaluating the Model.
+#### Did we achieve the target model performance of 75% classification accuracy or 0.8 R-squared?
 Yes we did.
-
-## Data Model Optimisation.
-### What steps we took to increase model performance?
+Initially the X variable or features included all columns and an accuracy of 79% was achieved.
+### Data Model Optimisation. What steps we took to increase model performance?
 #### Feature selection
  - Experimenting with binning features so as to have more columns in the DataFrame.
  - Removing columns.
 #### Hyperparameters
  - Changing the train_test_split with train-size = 0.2, rather than the deafult setting of 0.25, was also tried, but this did not help the model accuracy.
 ## Results
-
 The logistic regression model was better at predicting the `1` (More chance of heart disease > 50% diameter narrowing) label then the `0` (Less chance of heart disease < 50% diameter narrowing) labels. This may be due to the bias of data having 41 `1`s and only 35 `0`s. 
 
 A balanced_accuracy_score of 82% makes one think that this is a good prediction model, as does the 83% accuracy score in the classification report.
@@ -87,7 +82,6 @@ We managed to achieve an improvement of accuracy from 79% to 83% in the Logistic
 
 We would recommend obtaining a new dataset with the same features to make predictions on new data and compare the accuracy of this model.
 ## Summary.
-
 We are 83% sure that the model can actually predict the chance of heart disease.
 
 Without 100% accuracy in a clinical healthcare prediction such as the chance of heart disease, one may not be comfortable giving the diagnosis of heart disease based on this models predictions.
@@ -97,7 +91,6 @@ It mat be best used as a screening tool and indicate to individuals to have furt
 9/76 people were predicted as a false positive, and these people would be sent for further testing and then hopefully found to be not at risk of heart disease.
 
 The issue is the 4/76 false negatives predicted by the model, which is the worse case scenario as these people who are at risk of heart disease have not been identified.
-
 
 ### Enjoy exploring our tableau and notebook!
 ### Ufuoma and Sandra
