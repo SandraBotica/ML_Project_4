@@ -3,9 +3,12 @@
 ## Overview.
 ### The purpose of this analysis was to use our knowledge of machine learning to create a binary classifier that can predict the chance of a heart disease.
 
-You are very welcome to have a look at our presentation slide deck for deeper insight into our story on Heart Disease Analysis and Prediction.
+You are very welcome to have a look at our presentation slide deck and Tableau for deeper insight into our story on Heart Disease Analysis and Prediction.
 
-**Project4SlideDeck.ppt**
+**Heart Disease Analysis and Predictions.pptx**
+
+https://public.tableau.com/app/profile/sandra.botica
+
 
 ## Contributing Members 
 
@@ -47,8 +50,7 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
  - There are 165 `1` More chance of heart disease > 50% diameter narrowing and 138 `0` Less chance of heart disease < 50% diameter narrowing. This indicated a fairly well-balanced column of data as the target variable.
 ### What variable(s) are the features for your model?
  - All other columns are the X variable or features for the model.
-### What variable(s) should be removed from the input data because they are neither targets nor features?
-- Variables to be removed were determined from checking different correlations
+
 # Data Model Implementation.
 ## Compiling, Training, and Evaluating the Model.
 
@@ -62,3 +64,4 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
 ## Summary.
 
 We would recommend 
+
