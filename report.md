@@ -1,20 +1,7 @@
 ## Project 4 Report - Heart Disease Analysis and Prediction.
 
 ## Overview.
-### The purpose of this analysis was to use our knowledge of machine learning to create a binary classifier that can predict the chance of heart disease.
-
-You are very welcome to have a look at our presentation slide deck and Tableau for deeper insight into our story on Heart Disease Analysis and Prediction.
-
-**Heart Disease Analysis and Predictions.pptx**
-
-https://public.tableau.com/app/profile/sandra.botica
-
-
-## Contributing Members 
-
-Ufuoma Atakere & Sandra Botica
-
-Students @ UWA 6 month Data Analytics Bootcamp November 2022- June 2023
+### The purpose of this analysis was to use our knowledge of supervised machine learning to create a binary classifier that can predict the chance of heart disease.
 
 ## Acknowledgments
 
@@ -35,17 +22,18 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
  - `ca`         Number of major vessels (0-4) colored by flourosopy
  - `thall`      Thalassemia (0 = null, 1 = fixed defect, 2 = normal, 3 = reversable defect)
  - `output`     Diagnosis of heart disease (angiographic disease status)(0: < 50% diameter narrowing. less chance of heart disease, 1: > 50% diameter narrowing. more chance of heart disease)
-## Technologies used
- - Python notebook
- - Matplotlib
- - Seaborn
- - Sklearn
- - QuickDBD
- - PostgreSQL
- - pgAdmin4
- - Tableau
+
 ## Data Preprocessing
- - Cleaning data
+ - The <heart.csv> was loaded in as a Pandas DataFrame called heart_df.
+ - Cleaning data, no nulls.
+
+ ### Visualisations
+ - Histograms and a pair plot for continuous data e.g. `age`, `trtbps`,`chol`, `thalach` and `oldpeak`. Looked at value-counts, min/max, mean/median values.
+ - Pie and bar charts for grouped/categorical data e.g. `sex`, `cp`, `fbs`, `restecg`, `exng`, `slp`, `caa` and `thall`. Looked at value-counts for each group.
+ - Correlation Matrix.
+ - Tableau VIZ created with one dashboard for each feature, filtered on value-counts of y target variable binary labels.
+ https://public.tableau.com/app/profile/sandra.botica   Heart_Disease viz
+
  - Splitting data into subsets for training and testing the model (train-test-split)
 ### What variable(s) are the target(s) for your model?
  - The "output" column, was the y target variable for the model. 
@@ -53,6 +41,9 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
 ### What variable(s) are the features for your model?
  - All other columns are the X variable or features for the model.
 
+ - The data was normalised using the StandardScaler() module from scikit-learn and a DataFrame called heart_df_scaled, was created with the scaled data. 
+
+ - The scaled data was reduced to 2 principal components with a Principal Component Analysis.
 ## Data Model Implementation.
 ### Compiling, Training, and Evaluating the Model.
 #### Did we achieve the target model performance of 75% classification accuracy or 0.8 R-squared?
@@ -63,7 +54,7 @@ Initially the X variable or features included all columns and an accuracy of 79%
  - Experimenting with binning features so as to have more columns in the DataFrame.
  - Removing columns.
 #### Hyperparameters
- - Changing the train_test_split with train-size = 0.2, rather than the deafult setting of 0.25, was also tried, but this did not help the model accuracy.
+ - Changing the train_test_split with test-size = 0.2 and then 0.3, rather than the deafult setting of 0.25, was also tried, but this did not help the model accuracy.
 ## Results
 The logistic regression model was better at predicting the `1` (More chance of heart disease > 50% diameter narrowing) label then the `0` (Less chance of heart disease < 50% diameter narrowing) labels. This may be due to the bias of data having 41 `1`s and only 35 `0`s. 
 
@@ -92,5 +83,4 @@ It mat be best used as a screening tool and indicate to individuals to have furt
 
 The issue is the 4/76 false negatives predicted by the model, which is the worse case scenario as these people who are at risk of heart disease have not been identified.
 
-### Enjoy exploring our tableau and notebook!
 ### Ufuoma and Sandra
