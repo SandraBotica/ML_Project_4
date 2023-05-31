@@ -8,15 +8,18 @@ You are very welcome to have a look at our presentation slide deck and Tableau f
 
 **Heart Disease Analysis and Predictions.pptx**
 
-https://public.tableau.com/app/profile/sandra.botica    Heart_Disease viz
+https://public.tableau.com/app/profile/sandra.botica    
+Heart_Disease viz
 ## Contributing Members 
 Ufuoma Atakere & Sandra Botica
+
 Students @ UWA 6 month Data Analytics Bootcamp November 2022- June 2023
 ## Acknowledgments
 **Data sourced from Kaggle.**
+
 https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset?select=heart.csv
 
- - Folder **Resources** <heart.csv>
+Folder `Resources` <heart.csv>
 ## Technologies used
  - Python notebook
  - Matplotlib
@@ -29,13 +32,14 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
 
 ## Getting Started
 
- 1. **<heart_ML.ipynb>**  has the code for summary statistics and plots.
+ 1. **<heart_ML.ipynb>**  for summary statistics, plots, machine learning models.
 
-    This notebook populates the **images** folder used for the slidedeck.
+    This notebook populates the `images` folder used for the slidedeck.
 
  2. A report/writeup of this project can be found in the file <report.md>
 
 ## Contact
- - Feel free to contact Ufuoma or Sandra with any questions.
+
+Feel free to contact Ufuoma or Sandra with any questions.
  - Ufuoma Ijevu     demijevu@gmail.com
  - Sandra Botica    smbotica@gmail.com
