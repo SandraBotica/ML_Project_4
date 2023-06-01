@@ -45,10 +45,10 @@ https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-predict
 ### What variable(s) are the features for your model?
  - All other columns are the X variable or features for the model.
 
- - The data was normalised using the StandardScaler() module from scikit-learn and a DataFrame called heart_df_scaled, was created with the scaled data. 
-
- - The scaled data was reduced to 2 principal components with a Principal Component Analysis.
+ - The data was normalised using the StandardScaler() module from scikit-learn. 
+ - The scaled data was reduced to 2 principal components with a Principal Component Analysis, also explored up to 5 principal components.
 ## Data Model Implementation.
+## Logistic Regression
 ### Compiling, Training, and Evaluating the Model.
  - Did we achieve the target model performance of 75% classification accuracy or 0.8 R-squared?
 Yes we did.
@@ -56,10 +56,12 @@ Initially the X variable or features included all columns and an accuracy of 79%
 With some optimisation we shifted the accuracy to 83% and finally to 86%.
 ### Data Model Optimisation. What steps we took to increase model performance?
 #### Feature selection
- - Experimenting with binning features so as to have more columns in the DataFrame.
  - Removing columns.
+ - Decisions based on correlation matrix and Random Forest Feature Importance.
 #### Hyperparameters
- - Changing the train_test_split with test-size = 0.2 and then 0.3, rather than the deafult setting of 0.25, was also tried, but this did not help the model accuracy.
+ - Changing the train_test_split with test-size = 0.2 and then 0.3, rather than the deafult setting of 0.25
+ - Adding stratify = y in the train-test-split
+ - When creating the model experimenting with sifferent solvers e.g. lbfgs, liblinear, newton-cg and sag and saga for scaled data.
 ## Results
 The logistic regression model was better at predicting the `1` (More chance of heart disease > 50% diameter narrowing) label then the `0` (Less chance of heart disease < 50% diameter narrowing) labels. This may be due to the bias of data having 41 `1`s and only 35 `0`s. 
 

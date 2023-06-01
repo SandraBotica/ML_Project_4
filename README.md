@@ -33,10 +33,15 @@ Folder `Resources` <heart.csv>
 ## Getting Started
 
  1. **<heart_ML.ipynb>**  for summary statistics, plots, machine learning models.
+  - Random Forest
+  - Logistic Regression
+  - PCA (Principal Component Analysis)
 
     This notebook populates the `images` folder used for the slidedeck.
 
- 2. A report/writeup of this project can be found in the file <report.md>
+ 2. **<heart_ML_NN.ipynb>** for neural network run from colab
+
+ 3. A report/writeup of this project can be found in the file <report.md>
 
 ## Contact
 
