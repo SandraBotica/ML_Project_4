@@ -39,7 +39,8 @@ Folder `Resources` <heart.csv>
 
     This notebook populates the `images` folder used for the slidedeck.
 
- 2. **<heart_ML_NN.ipynb>** for neural network run from colab
+ 2. **<heart_ML_NN.ipynb>** 
+  - Neural Network - colab
 
  3. A report/writeup of this project can be found in the file <report.md>
 
