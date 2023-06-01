@@ -61,7 +61,7 @@ With some optimisation we shifted the accuracy to 83% and finally to 86%.
 #### Hyperparameters
  - Changing the train_test_split with test-size = 0.2 and then 0.3, rather than the deafult setting of 0.25
  - Adding stratify = y in the train-test-split
- - When creating the model experimenting with sifferent solvers e.g. lbfgs, liblinear, newton-cg and sag and saga for scaled data.
+ - When creating the model experimenting with different solvers e.g. lbfgs, liblinear, newton-cg and sag and saga for scaled data.
 ## Results
 The logistic regression model was better at predicting the `1` (More chance of heart disease > 50% diameter narrowing) label then the `0` (Less chance of heart disease < 50% diameter narrowing) labels. This may be due to the bias of data having 41 `1`s and only 35 `0`s. 
 
@@ -82,7 +82,7 @@ We would recommend obtaining a new dataset with the same features to make predic
 ## Summary.
 We are 86% sure that the model can predict the chance of heart disease.
 
-Without 100% accuracy in a clinical healthcare prediction such as the chance of heart disease, one may not be comfortable giving the diagnosis of heart disease based on this models predictions.
+Without 100% accuracy in a clinical healthcare prediction such as the chance of heart disease, one may not be comfortable giving the diagnosis of chance of heart disease based on this models predictions.
 
 It mat be best used as a screening tool and indicate to individuals to have further screening if positive.
 
